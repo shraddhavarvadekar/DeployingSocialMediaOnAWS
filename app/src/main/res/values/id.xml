@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="Home_phonenumber" type="id"/>
+    <item name="Work_phonenumber" type="id"/>
+    <item name="Alt_email" type="id"/>
+</resources>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:divider="@drawable/seperator">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Select your tools"
+        android:id="@+id/toolslabel"
+        android:gravity="center"
+        android:height="50dp" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="3">
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageButton"
+            android:scaleType="centerCrop"
+            android:layout_gravity="left"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/addphonenum" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/addNumlinearlayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="@dimen/activity_text_size_small"
+                android:text=" "
+                android:id="@+id/textViewRegPhoneLabel"
+                android:layout_centerHorizontal="true" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/editTextRegPhone"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:background="@drawable/text_border_selector"
+                android:hint="Primary Phone number"
+                android:inputType="phone"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="@dimen/activity_text_padding"
+                android:text=" "
+                android:textColor="@color/alert"
+                android:id="@+id/textViewRegPhoneMessage"
+                android:layout_below="@id/editTextRegPhone"
+                android:layout_centerHorizontal="true" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_intra_group_separation"
+                android:layout_below="@id/textViewRegPhoneMessage"
+                android:id="@+id/space_about_2" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/displayEmail"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/displayEmailImage"
+            android:scaleType="centerCrop"
+            android:layout_gravity="left"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/emailid"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/addEmaillayout">
+
+             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/toolemail"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="test@gmail.com" />
+
+             <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView6"
+                android:layout_gravity="center_horizontal"
+                 android:gravity="center"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/displaysocialtools"
+        android:layout_weight="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Connect your social tools"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="25dp"
+            android:id="@+id/allsocialtools">
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/facebookButton"
+                android:scaleType="centerCrop"
+                android:layout_gravity="left"
+                android:src="@drawable/facebook"
+                style="?android:attr/buttonBarButtonStyle"/>
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/twitterButton"
+                android:scaleType="centerCrop"
+                android:layout_gravity="left"
+                android:src="@drawable/twitter"
+                style="?android:attr/buttonBarButtonStyle"/>
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/instagramButton"
+                android:scaleType="centerCrop"
+                android:layout_gravity="left"
+                android:src="@drawable/instagram"
+                style="?android:attr/buttonBarButtonStyle"/>
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/pButton"
+                android:scaleType="centerCrop"
+                android:layout_gravity="left"
+                android:src="@drawable/p"
+                style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:id="@+id/toolNext"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:enabled="true" />
+    </LinearLayout>
+
+
+    </LinearLayout>

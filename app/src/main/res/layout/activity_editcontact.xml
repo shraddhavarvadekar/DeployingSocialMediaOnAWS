@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="141dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:srcCompat="@drawable/no_user_logo"
+        android:id="@+id/imageView3"
+        android:gravity="center"
+        android:height="40dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/displayName"
+        android:layout_weight="0.31">
+
+    <!--    <ImageView
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="left"
+            android:layout_marginTop="25dp"
+            style="?android:attr/buttonBarButtonStyle"
+            app:srcCompat="@drawable/no_user_logo"
+            android:layout_width="91dp" />-->
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/nameView"
+            android:layout_marginTop="25dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="3">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton"
+                android:scaleType="centerCrop"
+                android:layout_gravity="left"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/addphonenum" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/addNumlinearlayout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/numberView"
+                    android:textSize="15dp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/numberView1"
+                    android:textSize="15dp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/numberView2"
+                    android:textSize="15dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/displayEmail"
+            android:layout_weight="0.31">
+
+            <ImageView
+                android:id="@+id/displayEmailImage"
+                android:scaleType="centerCrop"
+                android:layout_gravity="left"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/emailid"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/addemaillinearlayout">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/emailView"
+                    android:textSize="15dp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/tvView"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/displaysocialtools"
+        android:layout_weight="1.75">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="25dp"
+            android:id="@+id/allsocialtools">
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/fbId"
+                android:scaleType="centerCrop"
+                android:layout_gravity="left"
+                android:src="@drawable/facebook"
+                style="?android:attr/buttonBarButtonStyle"/>
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/twitId"
+                android:scaleType="centerCrop"
+                android:layout_gravity="left"
+                android:src="@drawable/twitter"
+                style="?android:attr/buttonBarButtonStyle"/>
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/instaId"
+                android:scaleType="centerCrop"
+                android:layout_gravity="left"
+                android:src="@drawable/instagram"
+                style="?android:attr/buttonBarButtonStyle"/>
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/pinId"
+                android:scaleType="centerCrop"
+                android:layout_gravity="left"
+                android:src="@drawable/p"
+                style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:text="Confirm Your Changes"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:id="@+id/button"
+        android:layout_gravity="right"
+        android:layout_marginTop="5dip"
+        android:layout_alignParentEnd="true" />
+
+</LinearLayout>
